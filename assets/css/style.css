@@ -2,3 +2,33 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+.container {
+    width: 100%;
+}
+
+.centeredContent{
+    text-align: center;
+    background-color: #222;
+    height: 200px;
+}
+
+.alignment{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h3 {
+    color: yellow;
+}
+
+p {
+    color: orange;
+}
+
+@media only screen and (min-width: 40em) {
+    .centeredContent {
+        height: 500px;
+    }
+}
