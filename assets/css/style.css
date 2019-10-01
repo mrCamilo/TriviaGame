@@ -7,10 +7,14 @@ h1 {
     width: 100%;
 }
 
+body {
+    background-image: url('../images/reallymakesyathink2.jpg');
+}
+
 .centeredContent{
     text-align: center;
-    background-color: #222;
     height: 200px;
+    background-color: #d7c1fb;
 }
 
 .alignment{
@@ -20,11 +24,16 @@ h1 {
 }
 
 h3 {
-    color: yellow;
+    color: white;
+    font-weight: strong;
+    font-size: 30px;
 }
 
 p {
-    color: orange;
+    background-color: black;
+    color: white;
+    font-weight: strong;
+    font-size: 30px;
 }
 
 @media only screen and (min-width: 40em) {
