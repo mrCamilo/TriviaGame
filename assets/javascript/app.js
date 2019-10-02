@@ -24,7 +24,7 @@ $("#startGameBtn").click(function(){
     $("#startGameDiv").empty();
   });
 
-
+// four buttons for each answer
 $(document).ready(function () {
     $("#startGameBtn").click(function(){
         $(".btn-group-vertical").toggle(
