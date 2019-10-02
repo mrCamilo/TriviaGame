@@ -1,20 +1,14 @@
 
 // display question and 4 buttons (each a multiple choice answer)
-function askAQuestion(){
-    document.getElementById("firstQuestion").innerHTML = "What is the only episode where Larry the Lobster is referred to as Big Larry?" + console.log("hey it me"); 
-}
+//function askAQuestion(){
+    //document.getElementById("firstQuestion").innerHTML = "What is the only episode of Spongebob where Larry the Lobster is referred to as Big Larry?" + console.log("hey it me"); 
+//}
 
-
-// when you click the start button, it empties the div for questions to appear!
+// When you click the #startGameButton, ask the first question
 $(document).ready(function () {
-    $("#startGameBtn").on("click", function () {
-        $(".centralContainer").empty();
-    });
+    $("#startGameBtn").click(function(){
+        $(".centralContainer").html("drain gangg!");
+    }
+    );
 });
 
-// $(document).ready(function () {
-//     $("#startGameBtn").on("click", function (askAQuestion) {
-//         document.getElementById("firstQuestion").innerHTML = "What is the only episode where Larry the Lobster is referred to as Big Larry?" + console.log("hey it me"); 
-//     }
-//     );
-// });

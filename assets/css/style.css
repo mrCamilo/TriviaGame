@@ -22,16 +22,16 @@ body {
     background-color: #d7c1fb;
 }
 
+h3 {
+    color: black;
+    font-weight: strong;
+    font-size: 30px;
+}
+
 .centralContainer{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
-
-h3 {
-    color: white;
-    font-weight: strong;
-    font-size: 30px;
 }
 
 p {
