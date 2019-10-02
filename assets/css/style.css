@@ -22,7 +22,7 @@ body {
     background-color: #d7c1fb;
 }
 
-.alignment{
+.centralContainer{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
