@@ -26,7 +26,12 @@ $("#startGameBtn").click(function(){
 // four buttons for each answer
 $("#startGameBtn").click(function(){
     $(".firstSetOfQuestions").toggle(
-        ".fourQuestionButtons");
+        "#fourQuestionButtons");
+});
+
+// empty it again?
+$(".btn-secondary").click(function(){
+  $(".firstSetOfQuestions").empty();
 });
 
 // Get rid of the buttons after you click and move on t
