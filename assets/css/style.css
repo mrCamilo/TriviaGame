@@ -4,6 +4,10 @@ h1 {
     font-size: 30px;
 }
 
+mark {
+    background-color: palegoldenrod;
+}
+
 .container {
     width: 100%;
 }
