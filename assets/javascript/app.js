@@ -1,5 +1,4 @@
 // set a timer for each question
-//
 //$(document).ready(function(){
   //  $("button").click(function(){
     //  $("#startGameBtn").toggle();
@@ -20,10 +19,15 @@ var userScore = 0;
     //);
 //});
 
+$("#startGameBtn").click(function(){
+    $("#startGameDiv").empty();
+  });
+
+
 $(document).ready(function () {
     $("#startGameBtn").click(function(){
-        $(".centralContainer").toggle(
-            ".btn-secondary");
+        $(".btn-group-vertical").toggle(
+            ".fourQuestionButtons");
     }
     );
 });
