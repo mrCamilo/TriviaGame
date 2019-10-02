@@ -34,4 +34,10 @@ $(".btn-secondary").click(function(){
   $(".firstSetOfQuestions").empty();
 });
 
+// the second set of questions
+$(".btn-secondary").click(function(){
+  $(".firstSetOfQuestions").toggle(
+      "#fourMoreQuestionButtons");
+});
+
 // Get rid of the buttons after you click and move on t
