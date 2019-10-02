@@ -19,6 +19,7 @@ var userScore = 0;
     //);
 //});
 
+// Get rid of the start button when you click it
 $("#startGameBtn").click(function(){
     $("#startGameDiv").empty();
   });
