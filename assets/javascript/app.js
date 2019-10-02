@@ -1,15 +1,22 @@
 // var for userScore and counter
 var userScore = 0;
 var counter = 300; // it's 300 seconds, I'm going to display it as minutes and seconds
+var minutes = 0;
+var seconds = 0;
 
 // set a timer for each question
 setInterval("timer()", 1000)
 
 function timer () {
   counter--;
+  var minutes = Math.floor(counter / 60);
+  var seconds = counter % 60;
 
   $("#counter").text(counter);
 }
+
+// display the timer
+document.getElementById("timerDisplay").innerHTML = "Remaining Time: " + minutes + ":" + seconds;
 
 // an object that has all my questions
 
