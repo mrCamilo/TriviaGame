@@ -23,7 +23,7 @@ $("#startGameBtn").click(function(){
     $("#startGameDiv").empty();
   });
 
-// four buttons for each answer
+// toggle the first set of questions
 $("#startGameBtn").click(function(){
     $(".firstSetOfQuestions").toggle(
         "#fourQuestionButtons");
@@ -35,9 +35,9 @@ $(".btn-secondary").click(function(){
 });
 
 // the second set of questions
-$(".btn-secondary").click(function(){
-  $(".firstSetOfQuestions").toggle(
-      "#fourMoreQuestionButtons");
-});
+//$(".btn-secondary").click(function(){
+  //$(".firstSetOfQuestions").toggle(
+    //  "#fourMoreQuestionButtons");
+//});
 
 // Get rid of the buttons after you click and move on t
