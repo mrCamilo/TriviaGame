@@ -13,9 +13,6 @@ function timer () {
   $("#timerDisplay").text("Time remaining: " + counter);
 }
 
-// display the timer
-//document.getElementById("timerDisplay").innerHTML = "Remaining Time: " + minutes + ":" + seconds;
-
 // an object that has all my questions
 
 // Get rid of the start button when you click it
@@ -51,4 +48,9 @@ $(".thirdButton").click(function(){
       "#fourLastQuestionButtons");
 });
 
-// Get rid of the buttons after you click and move on t
+// Get rid of the buttons after you click
+$(".lastButton").click(function(){
+  $(".lastSetOfQuestions").empty();
+});
+
+//move on to the results
