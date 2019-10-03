@@ -15,44 +15,31 @@ function timer () {
 
 // an object that has all my questions
 
-// Get rid of the start button when you click it
-//$("#startGameBtn").click(function(){
-    //$("#startGameDiv").empty();
-  //});
-
 $("#startGameBtn").click(function(){
     $("#startGameDiv").empty(); // Get rid of the start button when you click it
     $(".firstSetOfQuestions").toggle( // toggle the first set of questions
         "#fourQuestionButtons");
 });
 
-
-//$(".btn-secondary").click(function(){
-  //$(".firstSetOfQuestions").empty();
-//});
-
 // the second set of questions
 $(".btn-secondary").click(function(){
   $(".firstSetOfQuestions").empty(); // empty it again?
-  $(".secondSetOfQuestions").toggle(
+  $(".secondSetOfQuestions").toggle( // toggle the next set of questions
       "#fourMoreQuestionButtons");
 });
 
-// empty it again
-//$(".thirdButton").click(function(){
-  //$(".secondSetOfQuestions").empty();
-//});
-
 // last set of questions
 $(".thirdButton").click(function(){
-  $(".secondSetOfQuestions").empty();
-  $(".lastSetOfQuestions").toggle(
+  $(".secondSetOfQuestions").empty(); // empty it again
+  $(".lastSetOfQuestions").toggle( // toggle the last set of questions
       "#fourLastQuestionButtons");
+      userScore++; // increment user score
+      console.log(userScore);
 });
 
-// Get rid of the buttons after you click
-//$(".lastButton").click(function(){
-  //$(".lastSetOfQuestions").empty();
-//});
+// Get rid of the buttons after you click, make way for results screen
+$(".lastButton").click(function(){
+  $(".lastSetOfQuestions").empty();
+});
 
 //move on to the results
