@@ -35,9 +35,9 @@ $(".btn-secondary").click(function(){
 });
 
 // the second set of questions
-//$(".btn-secondary").click(function(){
-  //$(".firstSetOfQuestions").toggle(
-    //  "#fourMoreQuestionButtons");
-//});
+$(".btn-secondary").click(function(){
+  $(".secondSetOfQuestions").toggle(
+      "#fourMoreQuestionButtons");
+});
 
 // Get rid of the buttons after you click and move on t
