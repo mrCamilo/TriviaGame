@@ -7,9 +7,6 @@ setInterval("timer()", 1000)
 
 function timer () {
   counter--;
-  var minutes = Math.floor(counter / 60);
-  var seconds = counter % 60;
-
   $("#timerDisplay").text("Time remaining: " + counter);
 }
 
@@ -19,6 +16,7 @@ $("#startGameBtn").click(function(){
     $("#startGameDiv").empty(); // Get rid of the start button when you click it
     $(".firstSetOfQuestions").toggle( // toggle the first set of questions
         "#fourQuestionButtons");
+        userScore++;
 });
 
 // the second set of questions
@@ -26,6 +24,7 @@ $(".btn-secondary").click(function(){
   $(".firstSetOfQuestions").empty(); // empty it again?
   $(".secondSetOfQuestions").toggle( // toggle the next set of questions
       "#fourMoreQuestionButtons");
+      userScore++;
 });
 
 // last set of questions
@@ -40,8 +39,8 @@ $(".thirdButton").click(function(){
 // Get rid of the buttons after you click, make way for results screen
 $(".lastButton").click(function(){
   $(".lastSetOfQuestions").empty();
-  $(".resultsDisplay").toggle(
-    "#results");
+  $(".resultsDisplay").toggle(".resultsDisplay");
+  $(".resultsDisplay").html("You got " + userScore + " correct out of <b>T H R E E !</b> Wow!!!!! Incredible!!");
 });
 
-//move on to the results
+
