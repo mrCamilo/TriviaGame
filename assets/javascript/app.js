@@ -20,21 +20,20 @@ function timer () {
     //$("#startGameDiv").empty();
   //});
 
-// toggle the first set of questions
 $("#startGameBtn").click(function(){
-    $("#startGameDiv").empty();
-    $(".firstSetOfQuestions").toggle(
+    $("#startGameDiv").empty(); // Get rid of the start button when you click it
+    $(".firstSetOfQuestions").toggle( // toggle the first set of questions
         "#fourQuestionButtons");
 });
 
-// empty it again?
+
 //$(".btn-secondary").click(function(){
   //$(".firstSetOfQuestions").empty();
 //});
 
 // the second set of questions
 $(".btn-secondary").click(function(){
-  $(".firstSetOfQuestions").empty();
+  $(".firstSetOfQuestions").empty(); // empty it again?
   $(".secondSetOfQuestions").toggle(
       "#fourMoreQuestionButtons");
 });
