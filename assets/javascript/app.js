@@ -16,6 +16,7 @@ $("#startGameBtn").click(function(){
     $("#startGameDiv").empty(); // Get rid of the start button when you click it
     $(".firstSetOfQuestions").toggle( // toggle the first set of questions
         "#fourQuestionButtons");
+        console.log(userScore);
         userScore++;
 });
 
@@ -24,7 +25,8 @@ $(".btn-secondary").click(function(){
   $(".firstSetOfQuestions").empty(); // empty it again?
   $(".secondSetOfQuestions").toggle( // toggle the next set of questions
       "#fourMoreQuestionButtons");
-      userScore++;
+      console.log(userScore);
+      userScore+=1;
 });
 
 // last set of questions
@@ -32,15 +34,15 @@ $(".thirdButton").click(function(){
   $(".secondSetOfQuestions").empty(); // empty it again
   $(".lastSetOfQuestions").toggle( // toggle the last set of questions
       "#fourLastQuestionButtons");
-      userScore++; // increment user score
       console.log(userScore);
+      userScore+=1; // increment user score
 });
 
 // Get rid of the buttons after you click, make way for results screen
 $(".lastButton").click(function(){
   $(".lastSetOfQuestions").empty();
   $(".resultsDisplay").toggle(".resultsDisplay");
-  $(".resultsDisplay").html("You got " + userScore + " correct out of <b>T H R E E !</b> Wow!!!!! Incredible!!");
+  $(".resultsDisplay").html("You got " + userScore + " correct out of <b>T H R E E !</b> Wow!!!!! Incredible!! Ok bye!!!");
 });
 
 
