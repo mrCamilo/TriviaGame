@@ -23,6 +23,8 @@ $("#startGameBtn").click(function(){
 // the second set of questions
 $(".btn-secondary").click(function(){
   $(".firstSetOfQuestions").empty(); // empty it again?
+  counter = 100;
+  timer();
   $(".secondSetOfQuestions").toggle( // toggle the next set of questions
       "#fourMoreQuestionButtons");
       console.log(userScore);
@@ -32,6 +34,8 @@ $(".btn-secondary").click(function(){
 // last set of questions
 $(".thirdButton").click(function(){
   $(".secondSetOfQuestions").empty(); // empty it again
+  counter = 100;
+  timer();
   $(".lastSetOfQuestions").toggle( // toggle the last set of questions
       "#fourLastQuestionButtons");
       console.log(userScore);
@@ -41,6 +45,8 @@ $(".thirdButton").click(function(){
 // Get rid of the buttons after you click, make way for results screen
 $(".lastButton").click(function(){
   $(".lastSetOfQuestions").empty();
+  counter = 100;
+  timer();
   $(".resultsDisplay").toggle(".resultsDisplay");
   $(".resultsDisplay").html("You got " + userScore + " correct out of <b>T H R E E !</b> Wow!!!!! Incredible!! Ok bye!!!");
 });
