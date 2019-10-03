@@ -40,4 +40,15 @@ $(".btn-secondary").click(function(){
       "#fourMoreQuestionButtons");
 });
 
+// empty it again
+$(".thirdButton").click(function(){
+  $(".secondSetOfQuestions").empty();
+});
+
+// last set of questions
+$(".thirdButton").click(function(){
+  $(".lastSetOfQuestions").toggle(
+      "#fourLastQuestionButtons");
+});
+
 // Get rid of the buttons after you click and move on t
