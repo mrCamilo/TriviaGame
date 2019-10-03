@@ -24,14 +24,14 @@ $("#startGameBtn").click(function(){
 // the second set of questions
 $(".btn-secondary").click(function(){
   $(".firstSetOfQuestions").empty(); // empty it again?
-  $(".secondSetOfQuestions").toggle( // toggle the next set of questions
+  $(".secondSetOfQuestions").toggle( // toggle the
       "#fourMoreQuestionButtons");
 });
 
 // last set of questions
 $(".thirdButton").click(function(){
   $(".secondSetOfQuestions").empty(); // empty it again
-  $(".lastSetOfQuestions").toggle( // toggle the last set of questions
+  $(".lastSetOfQuestions").toggle( // toggle the next set of questions
       "#fourLastQuestionButtons");
       userScore++; // increment user score
       console.log(userScore);
